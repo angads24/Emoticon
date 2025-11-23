@@ -18,7 +18,7 @@ project-root/
 ├─ Model/
 │ ├─ facialemotionmodel.h5
 │ └─ label_encoder.npy
-└─ images/ # Your dataset (train/val) organized in subfolders per emotion
+└─ images/ 
 ```
 ---
 ## Dataset
@@ -56,7 +56,9 @@ python -m venv .venv
 
 3. Install dependencies:
 
-``` pip install -r requirements.txt ```
+```
+pip install -r requirements.txt
+```
 
 
 ## Training the Model
@@ -64,7 +66,9 @@ python -m venv .venv
 1. Place your dataset in the path referenced by `dataset_path` in `Train_model.py`.
 2. Run the training script:
 
-```python Train_model.py```
+```
+python Train_model.py
+```
 
 
 - This will:
@@ -79,7 +83,9 @@ Ensure `facialemotionmodel.h5` and `label_encoder.npy` exist in the `Model/` dir
 
 Then run:
 
-```python app.py```
+```
+python app.py
+```
 
 - The script will:
   - Open the default webcam.
