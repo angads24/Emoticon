@@ -9,7 +9,7 @@ This is very simple project done as my FE PBL project later the idea got copyrig
 - Trains a CNN using Keras on grayscale 48x48 images.
 - Saves the trained model and label encoder for later inference.
 - Performs real-time face detection with OpenCV and overlays predicted emotions on webcam video.
----
+
 ## Project Structure
 ```
 project-root/
@@ -20,7 +20,7 @@ project-root/
 │ └─ label_encoder.npy
 └─ images/ 
 ```
----
+
 ## Dataset
 
 - The training script expects a folder where each subfolder name is an emotion label (e.g., `happy`, `sad`, `angry`).
