@@ -44,15 +44,19 @@ cd <your-repo-folder>
 
 2. Create and activate a virtual environment:
 
-```python -m venv .venv```
+```
+python -m venv .venv
+```
 
 - Windows
-```.venv\Scripts\activate```
+```
+.venv\Scripts\activate
+```
 
 
 3. Install dependencies:
 
-```pip install -r requirements.txt```
+``` pip install -r requirements.txt ```
 
 
 ## Training the Model
