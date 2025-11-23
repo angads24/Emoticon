@@ -1,6 +1,7 @@
-# Real-time Facial Emotion Detection
+# Real-time Facial Emotion Detection Systeem
 
 This project trains a convolutional neural network (CNN) to classify facial expressions into emotion categories and uses the trained model for real-time emotion detection from a webcam feed.
+This is very simple project done as my FE PBL project later the idea got copyright by the Indian Government.
 
 ## Features
 
@@ -10,7 +11,7 @@ This project trains a convolutional neural network (CNN) to classify facial expr
 - Performs real-time face detection with OpenCV and overlays predicted emotions on webcam video.
 ---
 ## Project Structure
-
+```
 project-root/
 ├─ Train_model.py # Script to train and save the model and label encoder
 ├─ app.py # Real-time webcam emotion detection using the saved model
@@ -18,21 +19,21 @@ project-root/
 │ ├─ facialemotionmodel.h5
 │ └─ label_encoder.npy
 └─ images/ # Your dataset (train/val) organized in subfolders per emotion
-
+```
 ---
 ## Dataset
 
 - The training script expects a folder where each subfolder name is an emotion label (e.g., `happy`, `sad`, `angry`).
 - Update `dataset_path` in `Train_model.py` to point to your dataset root (e.g., `images/train`).
 
-Example layout:
-
+`Example layout:`
+```
 images/train/
 ├─ happy/
 ├─ sad/
 ├─ angry/
 └─ neutral/
-
+```
 
 ## Installation
 
@@ -43,15 +44,15 @@ cd <your-repo-folder>
 
 2. Create and activate a virtual environment:
 
-``python -m venv .venv``
+```python -m venv .venv```
 
 - Windows
-``.venv\Scripts\activate``
+```.venv\Scripts\activate```
 
 
 3. Install dependencies:
 
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 
 ## Training the Model
@@ -59,7 +60,7 @@ pip install -r requirements.txt
 1. Place your dataset in the path referenced by `dataset_path` in `Train_model.py`.
 2. Run the training script:
 
-python Train_model.py
+```python Train_model.py```
 
 
 - This will:
@@ -74,7 +75,7 @@ Ensure `facialemotionmodel.h5` and `label_encoder.npy` exist in the `Model/` dir
 
 Then run:
 
-python app.py
+```python app.py```
 
 - The script will:
   - Open the default webcam.
