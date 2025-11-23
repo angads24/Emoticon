@@ -8,7 +8,7 @@ This project trains a convolutional neural network (CNN) to classify facial expr
 - Trains a CNN using Keras on grayscale 48x48 images.
 - Saves the trained model and label encoder for later inference.
 - Performs real-time face detection with OpenCV and overlays predicted emotions on webcam video.
-
+---
 ## Project Structure
 
 project-root/
@@ -18,6 +18,8 @@ project-root/
 │ ├─ facialemotionmodel.h5
 │ └─ label_encoder.npy
 └─ images/ # Your dataset (train/val) organized in subfolders per emotion
+
+---
 ## Dataset
 
 - The training script expects a folder where each subfolder name is an emotion label (e.g., `happy`, `sad`, `angry`).
