@@ -1,4 +1,4 @@
-# Real-time Facial Emotion Detection Systeem
+# Real-time Facial Emotion Detection System
 
 This project trains a convolutional neural network (CNN) to classify facial expressions into emotion categories and uses the trained model for real-time emotion detection from a webcam feed.
 This is very simple project done as my FE PBL project later the idea got copyright by the Indian Government.
